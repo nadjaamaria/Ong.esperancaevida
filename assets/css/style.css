@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #035835;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #035835;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+}
+/* Seção Sobre Nós com texto abaixo da imagem */
+.sobre-nos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.sobre-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.sobre-conteudo img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-conteudo .texto {
+    max-width: 700px;
+}
+/* Seção Projetos */
+.projetos {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.projetos h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #035835; 
+    
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: #035835;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95rem;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+/* Seção Como Ajudar */
+.como-ajudar {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #035835; 
+    border-radius: 20px;
+    margin: 50px auto;
+    max-width: 800px;
+    color: #fff; /* define cor branca como padrão */
+}
+
+.como-ajudar h2,
+.como-ajudar p {
+    color: #fff; /* força o título e parágrafo para branco */
+}
+
+.btn-ajudar {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #065e41; 
+    color: #fff; /* texto do botão em branco */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-ajudar:hover {
+    background-color: #035835; 
+    transform: translateY(-3px);
+}
+/* Seção Cadastro */
+.signup {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #035835; 
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    color: #fff;
+}
+
+.signup h2 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.signup p {
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.signup form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.signup form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+}
+
+.signup form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #035835; 
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.signup form button {
+    width: 50%; /* define largura menor */
+    max-width: 200px; /* opcional: limita a largura máxima */
+    padding: 15px;
+    background-color: #065e41; 
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+
+    /* centralizando */
+    display: block;
+    margin: 0 auto;
+}
